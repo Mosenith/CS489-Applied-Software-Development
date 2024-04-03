@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7a682886-070e-43be-889f-33904bd24b3b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lab1b/Employee-Pensions-Planning-System/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1b/Employee-Pensions-Planning-System/src/main/java/miu/edu/labs/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab1b/Employee-Pensions-Planning-System/src/main/java/miu/edu/labs/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1b/Employee-Pensions-Planning-System/src/main/java/miu/edu/labs/model/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab1b/Employee-Pensions-Planning-System/src/main/java/miu/edu/labs/model/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1b/Employee-Pensions-Planning-System/src/main/java/miu/edu/labs/model/PensionPlan.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab1b/Employee-Pensions-Planning-System/src/main/java/miu/edu/labs/model/PensionPlan.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +39,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Main.executor": "Run",
     "Application.ProductMgmtApp.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -55,7 +57,20 @@
       <recent name="$PROJECT_DIR$/lab1b" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="miu.edu.labs.Main" />
+      <module name="Employee-Pensions-Planning-System" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="miu.edu.labs.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ProductMgmtApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ProductMgmtApp" />
       <module name="Products-Management-System" />
@@ -65,6 +80,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.ProductMgmtApp" />
       </list>
     </recent_temporary>
@@ -85,7 +101,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1712093982977</updated>
-      <workItem from="1712093984737" duration="7462000" />
+      <workItem from="1712093984737" duration="13478000" />
     </task>
     <servers />
   </component>
