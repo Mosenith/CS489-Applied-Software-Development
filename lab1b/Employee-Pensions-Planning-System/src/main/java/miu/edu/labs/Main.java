@@ -3,7 +3,6 @@ package miu.edu.labs;
 import miu.edu.labs.model.Employee;
 import miu.edu.labs.model.PensionPlan;
 
-import javax.management.Query;
 import java.time.LocalDate;
 import java.util.*;
 
@@ -58,12 +57,9 @@ public class Main {
     private static boolean isQualifiedForEnrollment(Employee employee) {
         LocalDate today = LocalDate.now();
         LocalDate startDate = employee.getEmploymentDate();
-        if(startDate.plusYears(5).isBefore(today)) { // more than 5 years
-            return true;
-        }
 
-
-        return false;
+        // more than 5 years
+        return startDate.plusYears(5).isBefore(today);
     }
 
     private static boolean isQualifiedNextMonth(Employee employee) {
@@ -72,13 +68,11 @@ public class Main {
         LocalDate lastDayOfNextMonth = firstDayOfNextMonth.plusMonths(1).minusDays(1);
         LocalDate startDate = employee.getEmploymentDate();
 
-        // will be qualify next month : on or between 1st & last day of next month
+        // Will be qualify next month : on or between 1st & last day of next month
+        // Needs to be at least 4 years 11 months
         LocalDate nextFiveYears = startDate.plusYears(5);
-        if(nextFiveYears.isEqual(firstDayOfNextMonth) || nextFiveYears.isEqual(lastDayOfNextMonth) ||
-                nextFiveYears.isAfter(firstDayOfNextMonth) && nextFiveYears.isBefore(lastDayOfNextMonth)) {
-            return true;
-        }
-
-        return false;
+        return employee.getEmploymentDate().plusYears(4).isBefore(today) &&
+                nextFiveYears.isEqual(firstDayOfNextMonth) || nextFiveYears.isEqual(lastDayOfNextMonth) ||
+                nextFiveYears.isAfter(firstDayOfNextMonth) && nextFiveYears.isBefore(lastDayOfNextMonth);
     }
 }

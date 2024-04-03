@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7a682886-070e-43be-889f-33904bd24b3b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lab1b/lab1b-screenshots/Screenshot 2024-04-02 at 22.40.52.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab1b/lab1b-screenshots/Screenshot 2024-04-03 at 0.53.15.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1b/Employee-Pensions-Planning-System/src/main/java/miu/edu/labs/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab1b/Employee-Pensions-Planning-System/src/main/java/miu/edu/labs/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +42,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/mosenithheang/IntelliJProjects/Applied-Software-Development/CS489-Applied-Software-Development/lab1b/lab1b-screenshots",
+    "last_opened_file_path": "/Users/mosenithheang/IntelliJProjects/Applied-Software-Development/CS489-Applied-Software-Development/lab1a/lab1a-screenshots",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -53,6 +53,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lab1a/lab1a-screenshots" />
       <recent name="$PROJECT_DIR$/lab1b/lab1b-screenshots" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -103,7 +104,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1712093982977</updated>
-      <workItem from="1712093984737" duration="13792000" />
+      <workItem from="1712093984737" duration="15319000" />
     </task>
     <servers />
   </component>
