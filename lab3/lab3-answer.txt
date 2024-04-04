@@ -5,9 +5,10 @@ One important features is autoconfiguration. In Spring, we need to do a lot of c
 However, Spring boot offers autoconfiguration which save developers a lot of time spent on these configurations.
 Basically, it provides a read-made application which is more convenient and robust.
 
-3. Spring platform
+3. Spring boot is apart ot Spring platform, which is designed to simplify the development, configuration, and
+deployment of Spring-based applications.
 
-4. Spring boot is one of the modules in Spring platform.
+4. Spring framework is also one of the modules in Spring platform.
 Spring platform also includes many other modules such as Spring data, Spring security, Spring cloud...
 
 5. Dependency Injection is basically a way to create an instance without having to use 'new' keyword.
