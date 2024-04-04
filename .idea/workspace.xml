@@ -41,7 +41,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/mosenithheang/IntelliJProjects/Applied-Software-Development/CS489-Applied-Software-Development/lab1a/lab1a-screenshots",
+    "last_opened_file_path": "/Users/mosenithheang/IntelliJProjects/Applied-Software-Development/CS489-Applied-Software-Development/lab2",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -52,6 +52,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lab2" />
       <recent name="$PROJECT_DIR$/lab1a/lab1a-screenshots" />
       <recent name="$PROJECT_DIR$/lab1b/lab1b-screenshots" />
     </key>
@@ -103,7 +104,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1712093982977</updated>
-      <workItem from="1712093984737" duration="20627000" />
+      <workItem from="1712093984737" duration="23789000" />
     </task>
     <servers />
   </component>

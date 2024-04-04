@@ -1,0 +1,6 @@
+
+- The system will allow users to log in as a guest or as a fan club member.
+- The system will allow all users to purchase tickets.
+- The system will allow users to browse available shows and select the desired date(s).
+- The system will allow fan club member to purchase tickets with 10% discount.
+- The system will store the booking history of all users.
