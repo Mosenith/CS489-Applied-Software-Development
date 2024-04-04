@@ -1,0 +1,24 @@
+1. Spring is a framework which is used to build enterprise web applications.
+
+2. Spring boot is also a framework that builds on top of Spring. Spring boot offers extra functionalities on top of Spring.
+One important features is autoconfiguration. In Spring, we need to do a lot of configurations with XML or annotations.
+However, Spring boot offers autoconfiguration which save developers a lot of time spent on these configurations.
+Basically, it provides a read-made application which is more convenient and robust.
+
+3. Spring platform
+
+4. Spring boot is one of the modules in Spring platform.
+Spring platform also includes many other modules such as Spring data, Spring security, Spring cloud...
+
+5. Dependency Injection is basically a way to create an instance without having to use 'new' keyword.
+For example in Spring boot application, we have a controller & service classes, which we need to call the service class
+in the controller class. In this situation, we can use @Autowired private CustomerService customerService;.
+This Spring will create a bean(instance) of the actual CustomerService in our controller class.
+Then, we can access CustomerService's attributes and methods from its class in our controller class.
+
+6. Inversion of Control (IoC) is a design pattern in which inverts the traditional flow of control. Instead of developers
+call the methods or libraries, framework is responsible for those actions.
+Inversion of Control (IoC) is a fundamental principle in Spring Framework. Therefore, it allows Spring to manage the lifecycle
+and dependencies of the components in your application.
+
+
