@@ -68,7 +68,7 @@ public class Main {
         LocalDate lastDayOfNextMonth = firstDayOfNextMonth.plusMonths(1).minusDays(1);
         LocalDate startDate = employee.getEmploymentDate();
 
-        // Will be qualify next month : on or between 1st & last day of next month
+        // Will be qualified next month : on or between 1st & last day of next month
         // Needs to be at least 4 years 11 months
         LocalDate nextFiveYears = startDate.plusYears(5);
         return employee.getEmploymentDate().plusYears(4).isBefore(today) &&
