@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d29c5f8a-e719-48ca-ac41-8423ae37e7e3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1b/Employee-Pensions-Planning-System/src/main/java/miu/edu/labs/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab1b/Employee-Pensions-Planning-System/src/main/java/miu/edu/labs/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1b/Employee-Pensions-Planning-System/src/main/java/miu/edu/labs/model/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab1b/Employee-Pensions-Planning-System/src/main/java/miu/edu/labs/model/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1b/Employee-Pensions-Planning-System/src/main/java/miu/edu/labs/model/PensionPlan.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab1b/Employee-Pensions-Planning-System/src/main/java/miu/edu/labs/model/PensionPlan.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,29 +38,51 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "Application.Main.executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Spring Boot.ElibraryApplication.executor": "Run",
-    "jdk.selected.JAVA_MODULE": "openjdk-20",
+    "jdk.selected.JAVA_MODULE": "17",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/mosenithheang/IntelliJProjects/Applied-Software-Development/CS489-Applied-Software-Development/lab3",
+    "last_opened_file_path": "/Users/mosenithheang/IntelliJProjects/Applied-Software-Development/CS489-Applied-Software-Development/lab4",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lab4" />
       <recent name="$PROJECT_DIR$/lab3" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lab3/ElibraryApplication/src/main/resources/templates/home" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="miu.edu.labs.Main" />
+      <module name="Employee-Pensions-Planning-System" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="miu.edu.labs.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ElibraryApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="elibrary" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="edu.miu.cs489.elibrary.ElibraryApplication" />
@@ -74,6 +98,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Spring Boot.ElibraryApplication" />
       </list>
     </recent_temporary>
@@ -95,7 +120,7 @@
       <option name="presentableId" value="Default" />
       <updated>1712264771049</updated>
       <workItem from="1712264772192" duration="99000" />
-      <workItem from="1712264902567" duration="2288000" />
+      <workItem from="1712264902567" duration="6243000" />
     </task>
     <servers />
   </component>

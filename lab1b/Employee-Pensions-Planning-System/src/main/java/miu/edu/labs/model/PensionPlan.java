@@ -13,6 +13,9 @@ public class PensionPlan {
         this.monthlyContribution = monthlyContribution;
     }
 
+    public PensionPlan() {
+    }
+
     public String getPlanReferenceNumber() {
         return planReferenceNumber;
     }
@@ -39,10 +42,8 @@ public class PensionPlan {
 
     @Override
     public String toString() {
-        return "PensionPlan{" +
-                "planReferenceNumber='" + planReferenceNumber + '\'' +
-                ", enrollmentDate=" + enrollmentDate +
-                ", monthlyContribution=" + monthlyContribution +
-                '}';
+        return String.format("[\"planReferenceNumber\"=%s, " +
+                "\"enrollmentDate\"=%s, \"monthlyContribution\"=%.2f]",
+                planReferenceNumber, enrollmentDate, monthlyContribution);
     }
 }

@@ -67,11 +67,6 @@ public class Employee {
         this.pensionPlan = pensionPlan;
     }
 
-    public void setPensionPlan(PensionPlan pensionPlan, Employee employee) {
-        this.pensionPlan = pensionPlan;
-        pensionPlan.setEnrollmentDate(employee.getEmploymentDate().plusYears(5));
-    }
-
     @Override
     public String toString() {
         return "Employee{" +
@@ -88,5 +83,28 @@ public class Employee {
         return String.format("\t{\"employeeId\":\"%d\", \"firstName\":\"%s\", \"lastName\":\"%s\", " +
                         "\"employmentDate\":\"%s\", \"yearlySalary\":%.2f, \"pensionPlan\":%s}",
                 employeeId, firstName, lastName, employmentDate, yearlySalary, pensionPlan);
+    }
+
+    // Business Logic
+    public boolean isQualifiedForEnrollment(Employee employee) {
+        LocalDate today = LocalDate.now();
+        LocalDate startDate = employee.getEmploymentDate();
+
+        // more than 5 years
+        return startDate.plusYears(5).isBefore(today);
+    }
+
+    public boolean isQualifiedNextMonth(Employee employee) {
+        LocalDate today = LocalDate.now();
+        LocalDate firstDayOfNextMonth = today.plusMonths(1).withDayOfMonth(1);;
+        LocalDate lastDayOfNextMonth = firstDayOfNextMonth.plusMonths(1).minusDays(1);
+        LocalDate startDate = employee.getEmploymentDate();
+
+        // Will be qualified next month : on or between 1st & last day of next month
+        // Needs to be at least 4 years 11 months
+        LocalDate nextFiveYears = startDate.plusYears(5);
+        return employee.getEmploymentDate().plusYears(4).isBefore(today) &&
+                nextFiveYears.isEqual(firstDayOfNextMonth) || nextFiveYears.isEqual(lastDayOfNextMonth) ||
+                nextFiveYears.isAfter(firstDayOfNextMonth) && nextFiveYears.isBefore(lastDayOfNextMonth);
     }
 }
