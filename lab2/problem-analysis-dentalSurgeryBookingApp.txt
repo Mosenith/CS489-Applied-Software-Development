@@ -1,0 +1,8 @@
+
+- The office manager can register Dentists to their network.
+- The Office Manager can enroll new patients.
+- The patient can request appointments.
+- The patients should be able to sign-in to the system and view their appointments.
+- The patients should also be able to request to cancel or change their appointments.
+- The dentists can sign-in to the system and view a listing of all their Appointments.
+- The dentists cannot have more than 5 appointments in any given week.
