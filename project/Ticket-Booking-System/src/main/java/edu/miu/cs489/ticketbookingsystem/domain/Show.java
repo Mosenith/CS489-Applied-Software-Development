@@ -21,10 +21,10 @@ public class Show {
     @OneToMany(mappedBy = "showId")
     private Set<Ticket> ticketSet = new HashSet<>();
 
-    @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
-    @JoinTable(name = "membership_show",
-            joinColumns = @JoinColumn(name = "show_Id", referencedColumnName = "showId"),
-            inverseJoinColumns = @JoinColumn(name = "fanclubMember_Id", referencedColumnName = "id"))
+    @ManyToMany(mappedBy = "shows") // (fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+//    @JoinTable(name = "membership_show",
+//            joinColumns = @JoinColumn(name = "show_Id", referencedColumnName = "showId"),
+//            inverseJoinColumns = @JoinColumn(name = "fanclubMember_Id", referencedColumnName = "id"))
     private List<FanclubMember> members = new ArrayList<>();
 
     public Show() {

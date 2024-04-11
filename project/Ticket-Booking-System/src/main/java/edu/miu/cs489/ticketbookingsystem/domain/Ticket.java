@@ -18,9 +18,7 @@ public class Ticket {
     @JoinColumn(name = "showId")
     private Show showId;
 
-    @ManyToMany(cascade = { CascadeType.PERSIST,
-            CascadeType.MERGE},
-            fetch = FetchType.EAGER)
+    @ManyToMany(mappedBy = "tickets") //(cascade = { CascadeType.PERSIST, CascadeType.MERGE}, fetch = FetchType.EAGER)
     private List<BookingHistory> bookingHistoryList = new ArrayList<>(); // join table with booking history
 
     public Ticket() {

@@ -18,7 +18,7 @@ public class BookingHistory {
     private int lastName;
     private String role; // fan club member - if log in as member, otherwise guest
 
-    @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @ManyToMany // (fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @JoinTable(name = "ticket_bookingHistory",
             joinColumns = @JoinColumn(name = "booking_Id", referencedColumnName = "bookingId"),
             inverseJoinColumns = @JoinColumn(name = "ticket_Id", referencedColumnName = "ticketId"))

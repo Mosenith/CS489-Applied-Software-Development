@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d29c5f8a-e719-48ca-ac41-8423ae37e7e3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/Ticket-Booking-System/src/main/java/edu/miu/cs489/ticketbookingsystem/domain/BookingHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/Ticket-Booking-System/src/main/java/edu/miu/cs489/ticketbookingsystem/domain/BookingHistory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/Ticket-Booking-System/src/main/java/edu/miu/cs489/ticketbookingsystem/domain/FanclubMember.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/Ticket-Booking-System/src/main/java/edu/miu/cs489/ticketbookingsystem/domain/FanclubMember.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/Ticket-Booking-System/src/main/java/edu/miu/cs489/ticketbookingsystem/domain/Show.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/Ticket-Booking-System/src/main/java/edu/miu/cs489/ticketbookingsystem/domain/Show.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/Ticket-Booking-System/src/main/java/edu/miu/cs489/ticketbookingsystem/domain/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/Ticket-Booking-System/src/main/java/edu/miu/cs489/ticketbookingsystem/domain/Ticket.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,7 +148,7 @@
       <workItem from="1712264902567" duration="24996000" />
       <workItem from="1712706567364" duration="8125000" />
       <workItem from="1712818726817" duration="63000" />
-      <workItem from="1712848022003" duration="4467000" />
+      <workItem from="1712848022003" duration="6348000" />
     </task>
     <servers />
   </component>

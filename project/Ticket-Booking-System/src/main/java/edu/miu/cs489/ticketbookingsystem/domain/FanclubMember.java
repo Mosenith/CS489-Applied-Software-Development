@@ -23,9 +23,10 @@ public class FanclubMember {
     private String email;
     private LocalDate dateRegistered;
 
-    @ManyToMany(cascade = { CascadeType.PERSIST,
-            CascadeType.MERGE},
-            fetch = FetchType.EAGER)
+    @ManyToMany // (mappedBy = "showId") // (cascade = { CascadeType.PERSIST, CascadeType.MERGE}, fetch = FetchType.EAGER)
+    @JoinTable(name = "membership_show",
+            joinColumns = @JoinColumn(name = "member_Id", referencedColumnName = "id"),
+            inverseJoinColumns = @JoinColumn(name = "show_Id", referencedColumnName = "showId"))
     private List<Show> shows = new ArrayList<>(); // Member can view all the shows
 
     @OneToMany
