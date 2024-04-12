@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d29c5f8a-e719-48ca-ac41-8423ae37e7e3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/Ticket-Booking-System/src/main/java/edu/miu/cs489/ticketbookingsystem/TicketBookingSystemApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/Ticket-Booking-System/src/main/java/edu/miu/cs489/ticketbookingsystem/TicketBookingSystemApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/Ticket-Booking-System/src/main/java/edu/miu/cs489/ticketbookingsystem/domain/BookingHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/Ticket-Booking-System/src/main/java/edu/miu/cs489/ticketbookingsystem/domain/BookingHistory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/Ticket-Booking-System/src/main/java/edu/miu/cs489/ticketbookingsystem/domain/FanclubMember.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/Ticket-Booking-System/src/main/java/edu/miu/cs489/ticketbookingsystem/domain/FanclubMember.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/Ticket-Booking-System/src/main/java/edu/miu/cs489/ticketbookingsystem/domain/Show.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/Ticket-Booking-System/src/main/java/edu/miu/cs489/ticketbookingsystem/domain/Show.java" afterDir="false" />
@@ -20,6 +21,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -41,6 +43,7 @@
   "keyToString": {
     "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
     "Application.Main.executor": "Run",
+    "Application.TicketBookingSystemApplication.executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -80,13 +83,26 @@
       <recent name="$PROJECT_DIR$/lab3/ElibraryApplication/src/main/resources/templates/home" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.TicketBookingSystemApplication">
+  <component name="RunManager" selected="Application.TicketBookingSystemApplication">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="miu.edu.labs.Main" />
       <module name="Employee-Pensions-Planning-System" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="miu.edu.labs.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TicketBookingSystemApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="edu.miu.cs489.ticketbookingsystem.TicketBookingSystemApplication" />
+      <module name="Ticket-Booking-System" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.miu.cs489.ticketbookingsystem.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -123,6 +139,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TicketBookingSystemApplication" />
         <item itemvalue="Spring Boot.ElibraryApplication" />
         <item itemvalue="Application.Main" />
       </list>
@@ -148,7 +165,7 @@
       <workItem from="1712264902567" duration="24996000" />
       <workItem from="1712706567364" duration="8125000" />
       <workItem from="1712818726817" duration="63000" />
-      <workItem from="1712848022003" duration="6348000" />
+      <workItem from="1712848022003" duration="21811000" />
     </task>
     <servers />
   </component>

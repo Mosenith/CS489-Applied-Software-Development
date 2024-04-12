@@ -1,16 +1,16 @@
 package edu.miu.cs489.ticketbookingsystem.domain;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Data;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 @Entity
 @Data
+@AllArgsConstructor
 @Table(name = "Concert_Show")
 public class Show {
     @Id
@@ -18,8 +18,8 @@ public class Show {
     private int showId;
     private LocalDate showDate;
 
-    @OneToMany(mappedBy = "showId")
-    private Set<Ticket> ticketSet = new HashSet<>();
+    @OneToMany(mappedBy = "show", cascade = CascadeType.ALL)
+    private List<Ticket> ticketSet = new ArrayList<>();
 
     @ManyToMany(mappedBy = "shows") // (fetch = FetchType.EAGER, cascade = CascadeType.ALL)
 //    @JoinTable(name = "membership_show",
@@ -33,5 +33,17 @@ public class Show {
     public Show(int showId, LocalDate showDate) {
         this.showId = showId;
         this.showDate = showDate;
+    }
+
+    public boolean isSoldOut() {
+        return ticketSet.size() <= 5; // limit each show ticket to maximum 5
+    }
+
+    @Override
+    public String toString() {
+        return "Show{" +
+                "showDate=" + showDate +
+                ", showId=" + showId +
+                '}';
     }
 }

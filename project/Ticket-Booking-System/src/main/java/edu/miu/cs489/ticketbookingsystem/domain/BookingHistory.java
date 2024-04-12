@@ -14,8 +14,8 @@ public class BookingHistory {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int bookingId;
-    private int firstName;
-    private int lastName;
+    private String firstName;
+    private String lastName;
     private String role; // fan club member - if log in as member, otherwise guest
 
     @ManyToMany // (fetch = FetchType.EAGER, cascade = CascadeType.ALL)
