@@ -16,7 +16,7 @@ public class BookingHistoryService {
         return bookingHistoryRepository.findAll();
     }
 
-    public BookingHistory getBookingHistoryRepositoryById(Integer id) {
+    public BookingHistory getBookingHistoryById(Integer id) {
         return bookingHistoryRepository.findBookingHistoriesByBookingId(id).orElse(null);
     }
 
