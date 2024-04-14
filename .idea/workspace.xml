@@ -6,11 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="d29c5f8a-e719-48ca-ac41-8423ae37e7e3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/Ticket-Booking-System/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/Ticket-Booking-System/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/Ticket-Booking-System/src/main/java/edu/miu/cs489/ticketbookingsystem/TicketBookingSystemApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/Ticket-Booking-System/src/main/java/edu/miu/cs489/ticketbookingsystem/TicketBookingSystemApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Ticket-Booking-System/src/main/java/edu/miu/cs489/ticketbookingsystem/domain/BookingHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/Ticket-Booking-System/src/main/java/edu/miu/cs489/ticketbookingsystem/domain/BookingHistory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Ticket-Booking-System/src/main/java/edu/miu/cs489/ticketbookingsystem/domain/FanclubMember.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/Ticket-Booking-System/src/main/java/edu/miu/cs489/ticketbookingsystem/domain/FanclubMember.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/Ticket-Booking-System/src/main/java/edu/miu/cs489/ticketbookingsystem/domain/Show.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/Ticket-Booking-System/src/main/java/edu/miu/cs489/ticketbookingsystem/domain/Show.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/Ticket-Booking-System/src/main/java/edu/miu/cs489/ticketbookingsystem/domain/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/Ticket-Booking-System/src/main/java/edu/miu/cs489/ticketbookingsystem/domain/Ticket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/Ticket-Booking-System/src/main/java/edu/miu/cs489/ticketbookingsystem/repository/BookingHistoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/Ticket-Booking-System/src/main/java/edu/miu/cs489/ticketbookingsystem/repository/BookingHistoryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/Ticket-Booking-System/src/main/java/edu/miu/cs489/ticketbookingsystem/repository/FanclubMemberRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/Ticket-Booking-System/src/main/java/edu/miu/cs489/ticketbookingsystem/repository/FanclubMemberRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/Ticket-Booking-System/src/main/java/edu/miu/cs489/ticketbookingsystem/repository/ShowRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/Ticket-Booking-System/src/main/java/edu/miu/cs489/ticketbookingsystem/repository/ShowRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/Ticket-Booking-System/src/main/java/edu/miu/cs489/ticketbookingsystem/repository/TicketRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/Ticket-Booking-System/src/main/java/edu/miu/cs489/ticketbookingsystem/repository/TicketRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +23,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -39,38 +42,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
-    "Application.Main.executor": "Run",
-    "Application.TicketBookingSystemApplication.executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Spring Boot.DentalSurgeriesBookingAppApplication.executor": "Run",
-    "Spring Boot.ElibraryApplication.executor": "Run",
-    "Spring Boot.TicketBookingSystemApplication.executor": "Run",
-    "jdk.selected.JAVA_MODULE": "17",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/mosenithheang/IntelliJProjects/Applied-Software-Development/CS489-Applied-Software-Development/lab5a",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.TicketBookingSystemApplication.executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.DentalSurgeriesBookingAppApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ElibraryApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.TicketBookingSystemApplication.executor&quot;: &quot;Run&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/mosenithheang/IntelliJProjects/Applied-Software-Development/CS489-Applied-Software-Development/lab5a&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/lab5a" />
@@ -83,7 +86,7 @@
       <recent name="$PROJECT_DIR$/lab3/ElibraryApplication/src/main/resources/templates/home" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TicketBookingSystemApplication">
+  <component name="RunManager" selected="Spring Boot.TicketBookingSystemApplication">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="miu.edu.labs.Main" />
       <module name="Employee-Pensions-Planning-System" />
@@ -102,7 +105,7 @@
       <module name="Ticket-Booking-System" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="edu.miu.cs489.ticketbookingsystem.*" />
+          <option name="PATTERN" value="edu.miu.cs489.ticketbookingsystem.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -165,7 +168,10 @@
       <workItem from="1712264902567" duration="24996000" />
       <workItem from="1712706567364" duration="8125000" />
       <workItem from="1712818726817" duration="63000" />
-      <workItem from="1712848022003" duration="21811000" />
+      <workItem from="1712848022003" duration="22800000" />
+      <workItem from="1712937470729" duration="148000" />
+      <workItem from="1712940030079" duration="1278000" />
+      <workItem from="1713024480938" duration="7342000" />
     </task>
     <servers />
   </component>

@@ -1,5 +1,6 @@
 package edu.miu.cs489.ticketbookingsystem.domain;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -18,6 +19,8 @@ public class Ticket {
 
     @ManyToOne
     @JoinColumn(name = "showId")
+//    @JsonBackReference // manage overflow reference back & forth btw bidrirectional entities
+    // Handles by using dto & object mapper
     private Show show;
 
     @ManyToMany(mappedBy = "tickets") //(cascade = { CascadeType.PERSIST, CascadeType.MERGE}, fetch = FetchType.EAGER)

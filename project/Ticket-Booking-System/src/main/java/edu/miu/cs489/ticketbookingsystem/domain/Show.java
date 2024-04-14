@@ -1,5 +1,6 @@
 package edu.miu.cs489.ticketbookingsystem.domain;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -19,6 +20,7 @@ public class Show {
     private LocalDate showDate;
 
     @OneToMany(mappedBy = "show", cascade = CascadeType.ALL)
+//    @JsonManagedReference // manage overflow reference back & forth btw bidrirectional entities
     private List<Ticket> ticketSet = new ArrayList<>();
 
     @ManyToMany(mappedBy = "shows") // (fetch = FetchType.EAGER, cascade = CascadeType.ALL)

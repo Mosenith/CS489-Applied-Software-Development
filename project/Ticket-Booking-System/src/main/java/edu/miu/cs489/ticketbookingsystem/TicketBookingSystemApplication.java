@@ -36,41 +36,41 @@ public class TicketBookingSystemApplication implements CommandLineRunner {
     public void run(String... args) throws Exception {
 //        populateFanclubMember();
 //        populateShow();
-        FanclubMember f1 = fanclubMemberRepository.findById(1).get();
-        FanclubMember f2 = fanclubMemberRepository.findById(3).get();
-
-        // show 1
-        Ticket ticket1 = new Ticket(1,50,showRepository.findById(1).get());
-        Ticket ticket2 = new Ticket(1,50,showRepository.findById(1).get());
-        Ticket ticket3 = new Ticket(1,50,showRepository.findById(1).get());
-        List<Ticket> l1 = new ArrayList<>();
-        l1.add(ticket1);
-        l1.add(ticket2);
-        l1.add(ticket3);
-
-        // show 2
-        Ticket ticket4 = new Ticket(1,50,showRepository.findById(2).get());
-        Ticket ticket5 = new Ticket(1,50,showRepository.findById(2).get());
-        List<Ticket> l2 = new ArrayList<>();
-        l2.add(ticket4);
-        l2.add(ticket5);
-
-        // f1 book 3 tickets of show1
-        BookingHistory bh1 = new BookingHistory(1, f1.getFirstName(), f2.getLastName(),
-                "member", l1);
-        List<BookingHistory> ls = new ArrayList<>();
-        ls.add(bh1);
-        f1.setHistoryList(ls);
-
-        // f2 book 2 tickets of show2
-        BookingHistory bh2 = new BookingHistory(2, f2.getFirstName(), f2.getLastName(),
-                "member", l2);
-        List<BookingHistory> ls2 = new ArrayList<>();
-        ls2.add(bh2);
-        f2.setHistoryList(ls2);
-
-        bookingHistoryRepository.saveAndFlush(bh1);
-        bookingHistoryRepository.saveAndFlush(bh2);
+//        FanclubMember f1 = fanclubMemberRepository.findById(1).get();
+//        FanclubMember f2 = fanclubMemberRepository.findById(3).get();
+//
+//        // show 1
+//        Ticket ticket1 = new Ticket(1,50,showRepository.findById(1).get());
+//        Ticket ticket2 = new Ticket(1,50,showRepository.findById(1).get());
+//        Ticket ticket3 = new Ticket(1,50,showRepository.findById(1).get());
+//        List<Ticket> l1 = new ArrayList<>();
+//        l1.add(ticket1);
+//        l1.add(ticket2);
+//        l1.add(ticket3);
+//
+//        // show 2
+//        Ticket ticket4 = new Ticket(1,50,showRepository.findById(2).get());
+//        Ticket ticket5 = new Ticket(1,50,showRepository.findById(2).get());
+//        List<Ticket> l2 = new ArrayList<>();
+//        l2.add(ticket4);
+//        l2.add(ticket5);
+//
+//        // f1 book 3 tickets of show1
+//        BookingHistory bh1 = new BookingHistory(1, f1.getFirstName(), f2.getLastName(),
+//                "member", l1);
+//        List<BookingHistory> ls = new ArrayList<>();
+//        ls.add(bh1);
+//        f1.setHistoryList(ls);
+//
+//        // f2 book 2 tickets of show2
+//        BookingHistory bh2 = new BookingHistory(2, f2.getFirstName(), f2.getLastName(),
+//                "member", l2);
+//        List<BookingHistory> ls2 = new ArrayList<>();
+//        ls2.add(bh2);
+//        f2.setHistoryList(ls2);
+//
+//        bookingHistoryRepository.saveAndFlush(bh1);
+//        bookingHistoryRepository.saveAndFlush(bh2);
 
 //        showRepository.deleteAll();
     }
