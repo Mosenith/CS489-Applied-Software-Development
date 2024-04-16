@@ -19,9 +19,9 @@ public class Show {
     private int showId;
     private LocalDate showDate;
 
-    @OneToMany(mappedBy = "show", cascade = CascadeType.ALL)
-//    @JsonManagedReference // manage overflow reference back & forth btw bidrirectional entities
-    private List<Ticket> ticketSet = new ArrayList<>();
+//    @OneToMany(mappedBy = "show", cascade = CascadeType.ALL)
+////    @JsonManagedReference // manage overflow reference back & forth btw bidrirectional entities
+//    private List<Ticket> ticketSet = new ArrayList<>();
 
     @ManyToMany(mappedBy = "shows") // (fetch = FetchType.EAGER, cascade = CascadeType.ALL)
 //    @JoinTable(name = "membership_show",
@@ -37,9 +37,9 @@ public class Show {
         this.showDate = showDate;
     }
 
-    public boolean isSoldOut() {
-        return ticketSet.size() <= 5; // limit each show ticket to maximum 5
-    }
+//    public boolean isSoldOut() {
+//        return ticketSet.size() <= 5; // limit each show ticket to maximum 5
+//    }
 
     @Override
     public String toString() {

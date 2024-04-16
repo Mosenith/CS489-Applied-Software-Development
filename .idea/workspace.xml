@@ -6,11 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="d29c5f8a-e719-48ca-ac41-8423ae37e7e3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Ticket-Booking-System/src/main/java/edu/miu/cs489/ticketbookingsystem/controller/BookingHistoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/Ticket-Booking-System/src/main/java/edu/miu/cs489/ticketbookingsystem/controller/BookingHistoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Ticket-Booking-System/src/main/java/edu/miu/cs489/ticketbookingsystem/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/Ticket-Booking-System/src/main/java/edu/miu/cs489/ticketbookingsystem/controller/MemberController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Ticket-Booking-System/src/main/java/edu/miu/cs489/ticketbookingsystem/controller/ShowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/Ticket-Booking-System/src/main/java/edu/miu/cs489/ticketbookingsystem/controller/ShowController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/Ticket-Booking-System/src/main/java/edu/miu/cs489/ticketbookingsystem/TicketBookingSystemApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/Ticket-Booking-System/src/main/java/edu/miu/cs489/ticketbookingsystem/TicketBookingSystemApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/Ticket-Booking-System/src/main/java/edu/miu/cs489/ticketbookingsystem/controller/TicketController.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/Ticket-Booking-System/src/main/java/edu/miu/cs489/ticketbookingsystem/controller/TicketController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Ticket-Booking-System/src/main/java/edu/miu/cs489/ticketbookingsystem/service/BookingHistoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/Ticket-Booking-System/src/main/java/edu/miu/cs489/ticketbookingsystem/service/BookingHistoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/Ticket-Booking-System/src/main/java/edu/miu/cs489/ticketbookingsystem/domain/Show.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/Ticket-Booking-System/src/main/java/edu/miu/cs489/ticketbookingsystem/domain/Show.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/Ticket-Booking-System/src/main/java/edu/miu/cs489/ticketbookingsystem/repository/TicketRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/Ticket-Booking-System/src/main/java/edu/miu/cs489/ticketbookingsystem/repository/TicketRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/Ticket-Booking-System/src/main/java/edu/miu/cs489/ticketbookingsystem/service/TicketService.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/Ticket-Booking-System/src/main/java/edu/miu/cs489/ticketbookingsystem/service/TicketService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +83,7 @@
       <recent name="$PROJECT_DIR$/lab3/ElibraryApplication/src/main/resources/templates/home" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.TicketBookingSystemApplication">
+  <component name="RunManager" selected="Spring Boot.FoodOnlineApplication">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="miu.edu.labs.Main" />
       <module name="Employee-Pensions-Planning-System" />
@@ -130,6 +130,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="FoodOnlineApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="Food-Online" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="food.FoodOnlineApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TicketBookingSystemApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="Ticket-Booking-System" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="edu.miu.cs489.ticketbookingsystem.TicketBookingSystemApplication" />
@@ -168,7 +176,7 @@
       <workItem from="1712848022003" duration="22800000" />
       <workItem from="1712937470729" duration="148000" />
       <workItem from="1712940030079" duration="1278000" />
-      <workItem from="1713024480938" duration="11585000" />
+      <workItem from="1713024480938" duration="20759000" />
     </task>
     <servers />
   </component>

@@ -151,8 +151,8 @@ public class TicketBookingSystemApplication implements CommandLineRunner {
         ticketRepository.save(ticket5);
 
         // Update show with tickets
-        show1.setTicketSet(ticketsForShow1);
-        show2.setTicketSet(ticketsForShow2);
+//        show1.setTicketSet(ticketsForShow1);
+//        show2.setTicketSet(ticketsForShow2);
 
         // Save shows again to update the association
         showRepository.saveAndFlush(show1);

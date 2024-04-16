@@ -1,5 +1,6 @@
 package edu.miu.cs489.ticketbookingsystem.service;
 
+import edu.miu.cs489.ticketbookingsystem.domain.Show;
 import edu.miu.cs489.ticketbookingsystem.domain.Ticket;
 import edu.miu.cs489.ticketbookingsystem.repository.TicketRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,10 +18,10 @@ public class TicketService {
         return ticketRepository.findAll();
     }
 
-    public List<Ticket> getTicketsByShowId(Integer showId) {
-        Optional<List<Ticket>> ticket = ticketRepository.findTicketByShowId(showId);
-        return ticket.orElse(null);
-    }
+//    public List<Ticket> getTicketsByShowId(Show show) {
+//        Optional<List<Ticket>> ticket = ticketRepository.findTicketBy(show.getShowId());
+//        return ticket.orElse(null);
+//    }
 
     public List<Ticket> getTicketsByPriceAfter(Double price) {
         Optional<List<Ticket>> ticket = ticketRepository.findTicketByPriceAfter(price);

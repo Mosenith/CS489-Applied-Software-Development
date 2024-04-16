@@ -1,0 +1,21 @@
+#spring:
+#  datasource:
+#    url: jdbc:mysql://localhost:3306/FoodOnlineApplication
+#    username: root
+#    password: MNnith23
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#  jpa:
+#    show-sql: true
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          facebook:
+            clientId: <facebook client id>
+            clientSecret: <facebook client secret>
+            scope: email, public_profile
+          google:
+            clientId: <google client id>
+            clientSecret: <google client secret>
+            scope: email, profile

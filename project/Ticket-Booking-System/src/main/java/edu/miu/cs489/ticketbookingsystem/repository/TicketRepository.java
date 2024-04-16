@@ -12,7 +12,7 @@ public interface TicketRepository extends JpaRepository<Ticket,Integer> {
 
     Optional<Ticket> findTicketByTicketId(Integer ticketId);
 
-    Optional<List<Ticket>> findTicketByShowId(Integer showId);
+//    Optional<List<Ticket>> findTicketByShow(Integer showId);
 
     // More expensive than given price
     Optional<List<Ticket>> findTicketByPriceAfter(Double price);

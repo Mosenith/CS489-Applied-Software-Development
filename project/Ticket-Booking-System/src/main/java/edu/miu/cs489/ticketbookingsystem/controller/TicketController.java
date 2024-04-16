@@ -6,10 +6,7 @@ import edu.miu.cs489.ticketbookingsystem.service.TicketService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -26,16 +23,16 @@ public class TicketController {
         return new ResponseEntity<List<Ticket>>(tickets, HttpStatus.OK);
     }
 
-    @GetMapping("/{showId}")
-    public ResponseEntity<?> getTicketById(@PathVariable("showId") Integer showId) {
-        List<Ticket> tickets = ticketService.getTicketsByShowId(showId);
-
-        if(tickets == null) {
-            return new ResponseEntity<List<Ticket>>(HttpStatus.NOT_FOUND);
-        }
-
-        return new ResponseEntity<List<Ticket>>(tickets, HttpStatus.OK);
-    }
+//    @GetMapping("/{showId}")
+//    public ResponseEntity<?> getTicketById(@RequestBody Show show) {
+//        List<Ticket> tickets = ticketService.getTicketsByShowId(show);
+//
+//        if(tickets == null) {
+//            return new ResponseEntity<List<Ticket>>(HttpStatus.NOT_FOUND);
+//        }
+//
+//        return new ResponseEntity<List<Ticket>>(tickets, HttpStatus.OK);
+//    }
 
     @GetMapping("priceBefore/{price}")
     public ResponseEntity<?> getShowsBeforeDate(@PathVariable("price") Double price) {
