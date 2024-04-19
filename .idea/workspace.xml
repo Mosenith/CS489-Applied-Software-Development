@@ -5,12 +5,54 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d29c5f8a-e719-48ca-ac41-8423ae37e7e3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/project/Food-Online-Application/src/main/java/food/service/CustomUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Ticket-Booking-System/src/main/java/edu/miu/cs489/ticketbookingsystem/TicketBookingSystemApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/Ticket-Booking-System/src/main/java/edu/miu/cs489/ticketbookingsystem/TicketBookingSystemApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Ticket-Booking-System/src/main/java/edu/miu/cs489/ticketbookingsystem/controller/TicketController.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/Ticket-Booking-System/src/main/java/edu/miu/cs489/ticketbookingsystem/controller/TicketController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Ticket-Booking-System/src/main/java/edu/miu/cs489/ticketbookingsystem/domain/Show.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/Ticket-Booking-System/src/main/java/edu/miu/cs489/ticketbookingsystem/domain/Show.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Ticket-Booking-System/src/main/java/edu/miu/cs489/ticketbookingsystem/repository/TicketRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/Ticket-Booking-System/src/main/java/edu/miu/cs489/ticketbookingsystem/repository/TicketRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Ticket-Booking-System/src/main/java/edu/miu/cs489/ticketbookingsystem/service/TicketService.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/Ticket-Booking-System/src/main/java/edu/miu/cs489/ticketbookingsystem/service/TicketService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/Food-Online-Application/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/src/main/java/food/config/SecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/src/main/java/food/controller/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/Food-Online-Application/src/main/java/food/controller/RegisterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/src/main/java/food/domain/RegistrationForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/Food-Online-Application/src/main/java/food/domain/RegistrationForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/src/main/java/food/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/Food-Online-Application/src/main/java/food/domain/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/src/main/java/food/repository/FoodRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/Food-Online-Application/src/main/java/food/repository/FoodRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/src/main/java/food/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/Food-Online-Application/src/main/java/food/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/src/main/java/food/service/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/project/Food-Online-Application/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/src/main/resources/templates/registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/Food-Online-Application/src/main/resources/templates/registration.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/src/test/java/food/HomeControllerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/target/classes/food/FoodOnlineApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/target/classes/food/config/SecurityConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/target/classes/food/config/WebConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/target/classes/food/controller/DesignFoodController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/target/classes/food/controller/FoodController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/target/classes/food/controller/HomeController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/target/classes/food/controller/OrderController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/target/classes/food/controller/RegisterController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/target/classes/food/domain/Food.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/target/classes/food/domain/Menu$Type.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/target/classes/food/domain/Menu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/target/classes/food/domain/Order.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/target/classes/food/domain/RegistrationForm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/target/classes/food/domain/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/target/classes/food/repository/FoodRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/target/classes/food/repository/MenuRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/target/classes/food/repository/OrderRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/target/classes/food/repository/UserRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/target/classes/food/service/FoodService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/target/classes/food/service/MenuService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/target/classes/food/service/OrderService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/target/classes/food/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/target/classes/static/databaseMapping/databaseQuery.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/target/classes/static/images/taco-cloud.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/target/classes/templates/design.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/target/classes/templates/home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/target/classes/templates/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/target/classes/templates/orderForm.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/target/classes/templates/registration.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/target/test-classes/food/HomeControllerTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/target/test-classes/food/MenuOnlineApplicationTests.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,9 +70,23 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Mosenith&quot;
+  }
+}</component>
   <component name="GitLabMergeRequestsSettings">{}</component>
-  <component name="GithubPullRequestsUISettings">{}</component>
-  <component name="KubernetesApiProvider">{}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Mosenith/CS489-Applied-Software-Development.git&quot;,
+    &quot;accountId&quot;: &quot;a5eaed0b-3eea-4175-9dcf-8cf71fe729e0&quot;
+  }
+}</component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -39,38 +95,51 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.TicketBookingSystemApplication.executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;Spring Boot.DentalSurgeriesBookingAppApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.ElibraryApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.TicketBookingSystemApplication.executor&quot;: &quot;Run&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/mosenithheang/IntelliJProjects/Applied-Software-Development/CS489-Applied-Software-Development/lab5a&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "Application.FoodOnlineApplication.executor": "Run",
+    "Application.Main.executor": "Run",
+    "Application.TicketBookingSystemApplication.executor": "Run",
+    "Docker.CS489-Project.executor": "Run",
+    "JUnit.HomeControllerTest.executor": "Run",
+    "JUnit.HomeControllerTest.testHomePage.executor": "Run",
+    "JUnit.MenuOnlineApplicationTests.executor": "Run",
+    "Maven.Food-Online [clean].executor": "Run",
+    "Maven.Food-Online [install].executor": "Run",
+    "Maven.Food-Online [test].executor": "Run",
+    "Maven.foodonline [clean].executor": "Run",
+    "Maven.foodonline [install].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.DentalSurgeriesBookingAppApplication.executor": "Run",
+    "Spring Boot.ElibraryApplication.executor": "Run",
+    "Spring Boot.FoodOnlineApplication.executor": "Run",
+    "Spring Boot.TicketBookingSystemApplication.executor": "Run",
+    "jdk.selected.JAVA_MODULE": "17",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/mosenithheang/IntelliJProjects/Applied-Software-Development/CS489-Applied-Software-Development/lab5a",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "service.view.auto.scroll.to.source": "true",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/lab5a" />
@@ -84,12 +153,12 @@
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.FoodOnlineApplication">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="miu.edu.labs.Main" />
-      <module name="Employee-Pensions-Planning-System" />
+    <configuration name="FoodOnlineApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="food.FoodOnlineApplication" />
+      <module name="Food-Online" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="miu.edu.labs.*" />
+          <option name="PATTERN" value="food.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -97,15 +166,48 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TicketBookingSystemApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="edu.miu.cs489.ticketbookingsystem.TicketBookingSystemApplication" />
-      <module name="Ticket-Booking-System" />
+    <configuration name="HomeControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Food-Online" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="edu.miu.cs489.ticketbookingsystem.controller.*" />
+          <option name="PATTERN" value="food.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="food" />
+      <option name="MAIN_CLASS_NAME" value="food.HomeControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HomeControllerTest.testHomePage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Food-Online" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="food.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="food" />
+      <option name="MAIN_CLASS_NAME" value="food.HomeControllerTest" />
+      <option name="METHOD_NAME" value="testHomePage" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MenuOnlineApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Food-Online" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="food.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="food" />
+      <option name="MAIN_CLASS_NAME" value="food.MenuOnlineApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -113,19 +215,6 @@
     <configuration name="DentalSurgeriesBookingAppApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="Dental-Surgeries-Booking-App" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="edu.miu.cs489.dentalsurgeriesbookingapp.DentalSurgeriesBookingAppApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ElibraryApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="elibrary" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="edu.miu.cs489.elibrary.ElibraryApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="edu.miu.cs489.elibrary.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -145,11 +234,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CS489-Project" type="docker-deploy" factoryName="docker-image" temporary="true" server-name="Docker">
+      <deployment type="docker-image">
+        <settings>
+          <option name="imageTag" value="foodonline:0.0.1-SNAPSHOT" />
+          <option name="containerName" value="cs489-asd-project" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-image" temporary="true">
+      <deployment type="docker-image">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TicketBookingSystemApplication" />
-        <item itemvalue="Spring Boot.ElibraryApplication" />
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.FoodOnlineApplication" />
+        <item itemvalue="Docker.CS489-Project" />
+        <item itemvalue="JUnit.MenuOnlineApplicationTests" />
+        <item itemvalue="JUnit.HomeControllerTest.testHomePage" />
+        <item itemvalue="JUnit.HomeControllerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -176,11 +282,28 @@
       <workItem from="1712848022003" duration="22800000" />
       <workItem from="1712937470729" duration="148000" />
       <workItem from="1712940030079" duration="1278000" />
-      <workItem from="1713024480938" duration="20759000" />
+      <workItem from="1713024480938" duration="28298000" />
+      <workItem from="1713315979559" duration="969000" />
+      <workItem from="1713370547648" duration="10502000" />
+      <workItem from="1713393327934" duration="583000" />
+      <workItem from="1713396743169" duration="33000" />
+      <workItem from="1713400773136" duration="4934000" />
+      <workItem from="1713467072154" duration="9828000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
