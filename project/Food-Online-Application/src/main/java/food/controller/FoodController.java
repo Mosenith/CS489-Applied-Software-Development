@@ -5,11 +5,12 @@ import food.repository.FoodRepository;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Optional;
 
-@RestController
+@Controller
 @RequestMapping(path = "/api/foods", produces = "application/json")
 @CrossOrigin(origins = "http://foodonline:8080") // Restrict clients consuming API, only from port 8080
 public class FoodController {

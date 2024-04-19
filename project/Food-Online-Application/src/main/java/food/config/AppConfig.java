@@ -23,6 +23,8 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 
 @Configuration
 public class AppConfig {
+//    @Autowired
+//    @Lazy
     @Autowired
     PasswordEncoder passwordEncoder;
 
@@ -57,15 +59,13 @@ public class AppConfig {
     }
 
     @Bean
-    public AuthenticationProvider authenticationProvider() {
-        daoAuthenticationProvider.setUserDetailsService(userDetailsService);
-        daoAuthenticationProvider.setPasswordEncoder(passwordEncoder);
-        return daoAuthenticationProvider;
+    PasswordEncoder passwordEncoder() {
+        return NoOpPasswordEncoder.getInstance();
     }
 
     @Bean
-    PasswordEncoder passwordEncoder() {
-        return NoOpPasswordEncoder.getInstance();
+    public AuthenticationProvider authenticationProvider() {
+        return daoAuthenticationProvider();
     }
 
     @Bean
@@ -82,7 +82,8 @@ public class AppConfig {
                 .authorizeHttpRequests(
                         auth -> {
                             auth
-                                    .requestMatchers("/api/auth/**").permitAll()
+                                    .requestMatchers("/api/auth/login").permitAll()
+                                    .requestMatchers("/api/auth/test").hasRole("USER")
                                     .anyRequest().permitAll();
                         }
                 )

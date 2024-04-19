@@ -26,8 +26,6 @@ public class User { // implements UserDetails {
     private String state;
     private String zip;
     private String phoneNumber;
-
-    @Transient
     private String role;
 
     // Data fields needed for implementing methods from UserDetails interface
@@ -67,7 +65,7 @@ public class User { // implements UserDetails {
     }
 
     public void setRole(String role) {
-        this.role = "user"; // since all registered users are just a user (no admin)
+        this.role = role; // since all registered users are just a user (no admin)
     }
 
     //    @Override

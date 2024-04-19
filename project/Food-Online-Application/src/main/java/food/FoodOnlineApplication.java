@@ -5,6 +5,7 @@ import food.domain.Menu;
 import food.repository.FoodRepository;
 import food.repository.MenuRepository;
 import food.repository.UserRepository;
+import food.service.CustomUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -22,7 +23,7 @@ public class FoodOnlineApplication implements CommandLineRunner {
 	private MenuRepository menuRepo;
 
 	@Autowired
-	private UserRepository userRepo;
+	private CustomUserService userService;
 
 	public static void main(String[] args) {
 		SpringApplication.run(FoodOnlineApplication.class, args);
@@ -30,6 +31,8 @@ public class FoodOnlineApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
+		userService.addUserData();
+
 		Menu pizzaMenu = new Menu("PZ", "Pizza", Menu.Type.FAST_FOOD);
 		Menu phoMenu = new Menu("PH", "Pho", Menu.Type.ASIAN);
 		Menu macaronMenu = new Menu("MC", "Macaron", Menu.Type.FRENCH);

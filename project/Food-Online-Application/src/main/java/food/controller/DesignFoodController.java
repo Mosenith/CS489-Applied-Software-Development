@@ -18,7 +18,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Slf4j
-@RestController
+@Controller
 @RequestMapping("/design")
 public class DesignFoodController {
     @GetMapping
