@@ -1,18 +1,19 @@
 package food.controller;
 
 import food.domain.RegistrationForm;
-import food.domain.User;
 import food.repository.UserRepository;
-import jakarta.validation.Valid;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
-@Controller
+@RestController
 @RequestMapping("/register")
 public class RegisterController {
+    @Autowired
     private UserRepository userRepo;
+
+    @Autowired
     private PasswordEncoder passwordEncoder;
 
     public RegisterController(UserRepository userRepo, PasswordEncoder passwordEncoder) {
@@ -25,7 +26,6 @@ public class RegisterController {
         model.addAttribute("RegistrationForm", new RegistrationForm());
         return "registration";
     }
-
 
     @PostMapping
     public String processRegistration(RegistrationForm form) {

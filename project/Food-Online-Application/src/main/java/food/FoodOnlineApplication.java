@@ -28,7 +28,6 @@ public class FoodOnlineApplication implements CommandLineRunner {
 		SpringApplication.run(FoodOnlineApplication.class, args);
 	}
 
-
 	@Override
 	public void run(String... args) throws Exception {
 		Menu pizzaMenu = new Menu("PZ", "Pizza", Menu.Type.FAST_FOOD);
