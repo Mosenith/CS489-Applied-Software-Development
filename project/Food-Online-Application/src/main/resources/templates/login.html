@@ -1,32 +1,91 @@
 <!DOCTYPE html>
-<html lang="en"
-      xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
 <head>
-    <title>Food Online</title>
-    <link rel="stylesheet" th:href="@{/styles.css}" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
 </head>
 <body>
-    <h1>Login</h1>
-    <img th:src="@{/images/TacoCloud.png}"/>
+<h2>Login</h2>
+<form id="loginForm" onsubmit="login(event)">
+    <label for="username">Username:</label><br>
+    <input type="text" id="username" name="username" required><br>
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password" required><br><br>
+    <button type="submit" name="action" value="login">Login</button>
+    <button type="submit" name="action" value="testLogin">Test Login</button>
+</form>
 
-    <div th:if="${#fields.hasAnyErrors()}">
-        Unable to login. Check your username and password.
-    </div>
+<script>
+    async function login(event) {
+        event.preventDefault(); // Prevent default form submission
 
-    <p>New here? Click
-        <a th:href="@{/register}">here</a> to register.</p>
+        // Get username and password from form
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
 
-    <!-- tag::thAction[] -->
-    <form method="POST" th:action="@{/login}" id="loginForm">
-        <!-- end::thAction[] -->
-        <label for="username">Username: </label>
-        <input type="text" name="username" id="username" /><br/>
+        // Create authentication request object
+        const authenticationRequest = {
+            username: username,
+            password: password
+        };
 
-        <label for="password">Password: </label>
-        <input type="password" name="password" id="password" /><br/>
+        try {
+            // Send POST request to /api/auth/login
+            const response = await fetch('/api/auth/login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(authenticationRequest)
+            });
 
-        <input type="submit" value="Login"/>
-    </form>
+            // // Parse JSON response
+            const data = await response.json();
+
+            // Check if authentication was successful
+            if (response.ok) {
+                console.log("Login OKKKK!!!!!")
+
+                // Save JWT token to local storage
+                // localStorage.setItem('jwt', data.token);
+
+                // Redirect user to dashboard or another page
+                if (event.submitter.value === 'login') {
+                    window.location.href = '/design'; // Replace '/design' with the URL of your design page
+                } else if (event.submitter.value === 'testLogin') {
+                    console.log("Rout to Test Auth!");
+
+                    // Include JWT token in request header
+                    // const token = localStorage.getItem('jwt');
+                    const testResponse = await fetch('/api/auth/test', {
+                        method: 'GET',
+                        headers: {
+                            'Authorization': `Bearer ${data.token}`
+                        }
+                    });
+
+                    // Check if the response status is ok (200)
+                    if (testResponse.ok) {
+                        console.log("Rout to testAuth OKK...");
+                        // Get the username from the input field
+                        const username = document.getElementById('username').value;
+                        // Redirect to the testAuth page with the username as a query parameter
+                        window.location.href = `/testAuth?username=${username}`;
+                    } else {
+                        // Handle unauthorized access or other errors
+                        alert('Unauthorized access or an error occurred.');
+                    }
+                }
+            } else {
+                // Handle authentication failure (e.g., display error message)
+                alert('Authentication failed. Please try again.');
+            }
+        } catch (error) {
+            console.error('Error:', error);
+            alert('An error occurred. Please try again later.');
+        }
+    }
+</script>
 </body>
 </html>

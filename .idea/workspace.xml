@@ -6,28 +6,22 @@
   <component name="ChangeListManager">
     <list default="true" id="d29c5f8a-e719-48ca-ac41-8423ae37e7e3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/Food-Online-Application/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/src/main/java/food/FoodOnlineApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/Food-Online-Application/src/main/java/food/FoodOnlineApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/src/main/java/food/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/Food-Online-Application/src/main/java/food/config/AppConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/src/main/java/food/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/Food-Online-Application/src/main/java/food/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/src/main/java/food/config/jwt/JwtTokenFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/Food-Online-Application/src/main/java/food/config/jwt/JwtTokenFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/src/main/java/food/config/jwt/JwtTokenProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/Food-Online-Application/src/main/java/food/config/jwt/JwtTokenProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/src/main/java/food/controller/DesignFoodController.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/Food-Online-Application/src/main/java/food/controller/DesignFoodController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/src/main/java/food/controller/FoodController.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/Food-Online-Application/src/main/java/food/controller/FoodController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/src/main/java/food/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/Food-Online-Application/src/main/java/food/controller/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/src/main/java/food/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/Food-Online-Application/src/main/java/food/controller/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/src/main/java/food/controller/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/Food-Online-Application/src/main/java/food/controller/RegisterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/src/main/java/food/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/Food-Online-Application/src/main/java/food/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/src/main/java/food/domain/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/Food-Online-Application/src/main/java/food/domain/Menu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/src/main/java/food/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/Food-Online-Application/src/main/java/food/domain/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/src/main/java/food/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/Food-Online-Application/src/main/java/food/repository/UserRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/src/main/java/food/service/CustomUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/Food-Online-Application/src/main/java/food/service/CustomUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/project/Food-Online-Application/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/project/Food-Online-Application/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/Food-Online-Application/src/main/resources/templates/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/target/classes/food/FoodOnlineApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/project/Food-Online-Application/target/classes/food/FoodOnlineApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/target/classes/food/config/WebConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/target/classes/food/controller/DesignFoodController.class" beforeDir="false" afterPath="$PROJECT_DIR$/project/Food-Online-Application/target/classes/food/controller/DesignFoodController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/target/classes/food/controller/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/project/Food-Online-Application/target/classes/food/controller/HomeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/target/classes/food/controller/OrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/project/Food-Online-Application/target/classes/food/controller/OrderController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/target/classes/food/controller/RegisterController.class" beforeDir="false" afterPath="$PROJECT_DIR$/project/Food-Online-Application/target/classes/food/controller/RegisterController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/target/classes/food/controller/AuthController.class" beforeDir="false" afterPath="$PROJECT_DIR$/project/Food-Online-Application/target/classes/food/controller/AuthController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/target/classes/food/domain/Menu$Type.class" beforeDir="false" afterPath="$PROJECT_DIR$/project/Food-Online-Application/target/classes/food/domain/Menu$Type.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/target/classes/food/domain/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/project/Food-Online-Application/target/classes/food/domain/Menu.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/target/classes/food/domain/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/project/Food-Online-Application/target/classes/food/domain/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/target/classes/food/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/project/Food-Online-Application/target/classes/food/repository/UserRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/target/classes/food/service/CustomUserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/project/Food-Online-Application/target/classes/food/service/CustomUserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/target/classes/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/Food-Online-Application/target/classes/templates/login.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +33,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -76,10 +71,12 @@
     "Application.FoodOnlineApplication.executor": "Run",
     "Application.Main.executor": "Run",
     "Application.TicketBookingSystemApplication.executor": "Run",
+    "DefaultHtmlFileTemplate": "HTML File",
     "Docker.CS489-Project.executor": "Run",
     "JUnit.HomeControllerTest.executor": "Run",
     "JUnit.HomeControllerTest.testHomePage.executor": "Run",
     "JUnit.MenuOnlineApplicationTests.executor": "Run",
+    "JavaScript Debug.login.html.executor": "Run",
     "Maven.Food-Online [clean].executor": "Run",
     "Maven.Food-Online [install].executor": "Run",
     "Maven.Food-Online [test].executor": "Run",
@@ -127,7 +124,7 @@
       <recent name="$PROJECT_DIR$/lab3/ElibraryApplication/src/main/resources/templates/home" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.FoodOnlineApplication">
+  <component name="RunManager" selected="Spring Boot.FoodOnlineApplication">
     <configuration name="FoodOnlineApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="food.FoodOnlineApplication" />
       <module name="Food-Online" />
@@ -137,21 +134,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HomeControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Food-Online" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="food.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="food" />
-      <option name="MAIN_CLASS_NAME" value="food.HomeControllerTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -186,6 +168,9 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="login.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/CS489-Applied-Software-Development/project/Food-Online-Application/src/main/resources/templates/login.html" useBuiltInWebServerPort="true">
+      <method v="2" />
     </configuration>
     <configuration name="DentalSurgeriesBookingAppApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="Dental-Surgeries-Booking-App" />
@@ -227,10 +212,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.FoodOnlineApplication" />
+        <item itemvalue="JavaScript Debug.login.html" />
         <item itemvalue="Docker.CS489-Project" />
         <item itemvalue="JUnit.MenuOnlineApplicationTests" />
         <item itemvalue="JUnit.HomeControllerTest.testHomePage" />
-        <item itemvalue="JUnit.HomeControllerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -263,7 +248,13 @@
       <workItem from="1713393327934" duration="583000" />
       <workItem from="1713396743169" duration="33000" />
       <workItem from="1713400773136" duration="4934000" />
-      <workItem from="1713467072154" duration="22383000" />
+      <workItem from="1713467072154" duration="23460000" />
+      <workItem from="1713539550005" duration="11000" />
+      <workItem from="1713579862796" duration="2117000" />
+      <workItem from="1713798100977" duration="6000" />
+      <workItem from="1713799189214" duration="4325000" />
+      <workItem from="1713808852538" duration="2313000" />
+      <workItem from="1713898584695" duration="32291000" />
     </task>
     <servers />
   </component>

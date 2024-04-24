@@ -4,7 +4,6 @@ import food.domain.Food;
 import food.domain.Menu;
 import food.repository.FoodRepository;
 import food.repository.MenuRepository;
-import food.repository.UserRepository;
 import food.service.CustomUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;

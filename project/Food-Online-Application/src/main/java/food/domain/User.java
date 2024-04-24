@@ -28,6 +28,7 @@ public class User { // implements UserDetails {
     private String phoneNumber;
     private String role;
 
+    private String token;
     // Data fields needed for implementing methods from UserDetails interface
 //    private boolean accountNonExpired;
 //    private boolean accountNonLocked;
