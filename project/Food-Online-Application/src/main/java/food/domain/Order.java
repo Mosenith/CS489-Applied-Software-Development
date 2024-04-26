@@ -13,7 +13,7 @@ import java.util.List;
 
 @Data
 @Entity
-@Table(name = "Food_Order")
+@Table(name = "Menu_Order")
 public class Order implements Serializable {
     private static final long serialVersionUID = 1L;
 
@@ -48,10 +48,10 @@ public class Order implements Serializable {
 
     private Date placedAt;
 
-    @ManyToMany(targetEntity = Food.class)
-    private List<Food> foods = new ArrayList<>();
+    @ManyToMany(targetEntity = Menu.class)
+    private List<Menu> foods = new ArrayList<>();
 
-    public void addDesign(Food design) {
+    public void addDesign(Menu design) {
         this.foods.add(design);
     }
 

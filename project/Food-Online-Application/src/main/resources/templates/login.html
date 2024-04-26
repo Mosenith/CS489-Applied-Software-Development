@@ -52,7 +52,9 @@
 
                 // Redirect user to dashboard or another page
                 if (event.submitter.value === 'login') {
-                    window.location.href = '/design'; // Replace '/design' with the URL of your design page
+                    var tk = data.token;
+                    console.log("Before Route Token = " + tk);
+                    window.location.href = 'http://localhost:8080/design?token=' + data.token; // Replace '/design' with the URL of your design page
                 } else if (event.submitter.value === 'testLogin') {
                     console.log("Rout to Test Auth!");
 

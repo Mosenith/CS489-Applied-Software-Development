@@ -14,6 +14,7 @@ import lombok.*;
 public class Menu {
     @Id
     private String id;
+
     @NotEmpty(message = "Name may not be empty")
     @Size(min = 2, max = 32, message = "Name must be between 2 and 50 characters long")
     private String name;

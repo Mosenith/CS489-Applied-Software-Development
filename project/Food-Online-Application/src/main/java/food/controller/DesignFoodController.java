@@ -2,16 +2,15 @@ package food.controller;
 
 import food.domain.Menu;
 import food.domain.Menu.Type;
-import food.domain.Food;
+import food.domain.OrderHistory;
+import food.repository.UserRepository;
 import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.Errors;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.Arrays;
 import java.util.List;
@@ -19,10 +18,15 @@ import java.util.stream.Collectors;
 
 @Slf4j
 @Controller
-@RequestMapping("/design")
+@CrossOrigin
 public class DesignFoodController {
-    @GetMapping
-    public String showDesignForm(Model model) {
+    @Autowired
+    UserRepository userRepository;
+
+    @GetMapping("/design")
+    public String showDesignForm(Model model,
+                                 @RequestParam(value = "token", required = false) String token) {
+
         List<Menu> menus = Arrays.asList(
                 new Menu("PH", "Pho", Menu.Type.ASIAN),
                 new Menu("PT", "Pad Thai", Menu.Type.ASIAN),
@@ -64,18 +68,32 @@ public class DesignFoodController {
         model.addAttribute("french", french);
         model.addAttribute("italian", italian);
         model.addAttribute("japanese", japanese);
-        model.addAttribute("design", new Food());
+        model.addAttribute("design");
+        // Add the token as a model attribute
+        model.addAttribute("token", token);
 
         return "design";
     }
 
-    @PostMapping
-    public String processDesign(@Valid Food design, Errors errors) {
+    @PostMapping("/design")
+    public String processDesign(@Valid Menu design, Errors errors,
+                                @RequestParam("checkedItems") String checkedItems,
+                                @RequestParam("totalPrice") Double totalPrice,
+                                @RequestParam(value = "token", required = false) String token) {
+
         if(errors.hasErrors()) {
             return "design";
         }
 
-        log.info("Processing design: " + design);
+        OrderHistory history = new OrderHistory();
+        history.setUserId(userRepository.findUserByToken(token).getId());
+        history.setMenuNames(Arrays.asList(checkedItems.split(",")));
+        history.setTotalPrice(totalPrice);
+
+        log.info("Total Price: {}", totalPrice);
+        log.info("Checked items: {}", checkedItems);
+        log.info("Token: {}", token);
+
         return "redirect:/orders/current";
     }
 }

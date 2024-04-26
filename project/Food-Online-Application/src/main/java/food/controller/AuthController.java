@@ -21,7 +21,6 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 @CrossOrigin
-//@RequestMapping("/api/auth")
 public class AuthController {
     @Autowired
     private AuthenticationManager authenticationManager;

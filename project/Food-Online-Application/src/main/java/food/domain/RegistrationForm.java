@@ -13,11 +13,11 @@ public class RegistrationForm {
     private String state;
     private String zip;
     private String phone;
-
+    private String role;
     // Create User Object for processRegistration() to save
     public User toUser(PasswordEncoder passwordEncoder) {
         return new User(null,username, passwordEncoder.encode(password),
-                fullName, street, city, state, zip, phone);
+                fullName, street, city, state, zip, phone, role);
 
     }
 }

@@ -10,6 +10,8 @@ import java.util.Collection;
 
 @Entity
 @Data
+@Table(name = "Customer")
+@AllArgsConstructor
 //@NoArgsConstructor(force = true) // (access = AccessLevel.PRIVATE, force = true)
 public class User { // implements UserDetails {
 
@@ -29,11 +31,6 @@ public class User { // implements UserDetails {
     private String role;
 
     private String token;
-    // Data fields needed for implementing methods from UserDetails interface
-//    private boolean accountNonExpired;
-//    private boolean accountNonLocked;
-//    private boolean credentialsNonExpired;
-//    private boolean enabled;
 
 
     public User(Long id, String username, String password, String fullName, String street,
@@ -47,10 +44,20 @@ public class User { // implements UserDetails {
         this.state = state;
         this.zip = zip;
         this.phoneNumber = phoneNumber;
-//        this.accountNonExpired = accountNonExpired;
-//        this.accountNonLocked = accountNonLocked;
-//        this.credentialsNonExpired = credentialsNonExpired;
-//        this.enabled = enabled;
+    }
+
+    public User(Long id, String username, String password, String fullName, String street,
+                String city, String state, String zip, String phoneNumber, String role) {
+        this.id = id;
+        this.username = username;
+        this.password = password;
+        this.fullName = fullName;
+        this.street = street;
+        this.city = city;
+        this.state = state;
+        this.zip = zip;
+        this.phoneNumber = phoneNumber;
+        this.role = role;
     }
 
     public User(String username, String password) {
@@ -60,54 +67,4 @@ public class User { // implements UserDetails {
     public User() {
         this(null, null);
     }
-
-    public String getRole() {
-        return role;
-    }
-
-    public void setRole(String role) {
-        this.role = role; // since all registered users are just a user (no admin)
-    }
-
-    //    @Override
-//    public Collection<? extends GrantedAuthority> getAuthorities() {
-//        String[] userRoles = getRoles().stream()
-//                .map((role) -> role.getRoleName())
-//                .toArray(String[]::new);
-//        Collection<GrantedAuthority> authorities = AuthorityUtils.createAuthorityList(userRoles);
-//        return authorities;
-//    }
-//
-//    @Override
-//    public String getPassword() {
-//        return password;
-//    }
-//
-//    @Override
-//    public String getUsername() {
-//        return username;
-//    }
-//
-//    @Override
-//    public boolean isAccountNonExpired() {
-//        return accountNonExpired;
-//    }
-//
-//    @Override
-//    public boolean isAccountNonLocked() {
-//        return accountNonLocked;
-//    }
-//
-//    @Override
-//    public boolean isCredentialsNonExpired() {
-//        return credentialsNonExpired;
-//    }
-//
-//    @Override
-//    public boolean isEnabled() {
-//        return enabled;
-//    }
-//
-//    public UserDetails orElseThrow(Object o) {
-//    }
 }
