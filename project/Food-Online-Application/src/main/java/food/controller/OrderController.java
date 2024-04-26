@@ -1,22 +1,17 @@
 package food.controller;
 
 import food.domain.Order;
-import food.domain.OrderHistory;
-import food.repository.OrderHistoryRepository;
-import food.repository.UserRepository;
 import food.service.CustomUserService;
 import food.service.OrderService;
 import jakarta.servlet.http.HttpSession;
 import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.bind.support.SessionStatus;
 
 import java.util.Arrays;
 
@@ -26,8 +21,6 @@ import java.util.Arrays;
 public class OrderController {
     @Autowired
     OrderService orderService;
-    @Autowired
-    OrderHistoryRepository orderHistoryRepository;;
     @Autowired
     CustomUserService userService;
     @Autowired
@@ -40,41 +33,44 @@ public class OrderController {
     }
 
     @PostMapping("/orders")
-    public String processOrder(@Valid Order order, Errors errors) {
+    public String processOrder(@Valid Order order, Errors errors,
+                               BindingResult bindingResult) {
         if(errors.hasErrors()) {
             return "orderForm";
         }
 
+        if (bindingResult.hasErrors()) {
+            return "orderForm";
+        }
+
         // Retrieve session attributes
+        String token = (String) httpSession.getAttribute("token");
         String checkedItems = (String) httpSession.getAttribute("checkedItems");
         Double totalPrice = (Double) httpSession.getAttribute("totalPrice");
-        String token = (String) httpSession.getAttribute("token");
 
-        OrderHistory history = new OrderHistory();
-        history.setUserId(userService.getUserByToken(token).getId());
-        history.setMenuNames(Arrays.asList(checkedItems.split(",")));
-        history.setTotalPrice(totalPrice);
-        orderHistoryRepository.save(history);
+        order.setUserId(userService.getUserByToken(token).getId());
+        order.setMenuNames(Arrays.asList(checkedItems.split(",")));
+        order.setTotalPrice(totalPrice);
 
-        log.info("Passed history: {}", history);
-        log.info("Order Submitted: {}", order);
         orderService.createOrder(order);
 
-        return "redirect:/";
+        log.info("Passed curOrder: {}", order);
+
+        return "thankYou";
     }
 
-    @GetMapping("/test/{orderId}")
-    public ResponseEntity<?> getOrderById(@PathVariable Long orderId) {
-        Order searchOrder = orderService.getOrderById(orderId);
-        if(searchOrder == null) {
-            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
-        }
-        return new ResponseEntity<>(searchOrder, HttpStatus.OK);
-    }
-
-    @PostMapping("/test")
-    public ResponseEntity<?> addOrder(@RequestBody Order order) {
-        Order createdOrder = orderService.createOrder(order);
-        return new ResponseEntity<>(createdOrder, HttpStatus.OK);
-    }
+//    @GetMapping("/test/{orderId}")
+//    public ResponseEntity<?> getOrderById(@PathVariable Long orderId) {
+//        OrderOldVersion searchOrderOldVersion = orderService.getOrderById(orderId);
+//        if(searchOrderOldVersion == null) {
+//            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+//        }
+//        return new ResponseEntity<>(searchOrderOldVersion, HttpStatus.OK);
+//    }
+//
+//    @PostMapping("/test")
+//    public ResponseEntity<?> addOrder(@RequestBody OrderOldVersion orderOldVersion) {
+//        OrderOldVersion createdOrderOldVersion = orderService.createOrder(orderOldVersion);
+//        return new ResponseEntity<>(createdOrderOldVersion, HttpStatus.OK);
+//    }
 }

@@ -8,6 +8,8 @@
 <h1>Welcome to the Test Authentication Page!</h1>
 <p id="usernameDisplay"></p>
 
+<button onclick="showUser()">Show User</button>
+<button onclick="showOrderHistory()">Order History</button>
 <script>
     // Function to get the value of a query parameter from the URL
     function getParameterByName(name, url) {
@@ -24,6 +26,16 @@
     var username = getParameterByName('username');
     // Display the username on the page
     document.getElementById('usernameDisplay').textContent = 'Welcome, ' + username + '!';
+
+    function showUser() {
+        // Route to the URL for showing user details
+        window.location.href = '/admin/users';
+    }
+
+    function showOrderHistory() {
+        // Route to the URL for showing order history
+        window.location.href = '/admin/orderRecords';
+    }
 </script>
 </body>
 </html>

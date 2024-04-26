@@ -13,7 +13,8 @@
     <label for="password">Password:</label><br>
     <input type="password" id="password" name="password" required><br><br>
     <button type="submit" name="action" value="login">Login</button>
-    <button type="submit" name="action" value="testLogin">Test Login</button>
+    <button type="submit" onclick="register()">Register</button>
+    <button type="submit" name="action" value="testLogin">Login As Admin</button>
 </form>
 
 <script>
@@ -52,9 +53,7 @@
 
                 // Redirect user to dashboard or another page
                 if (event.submitter.value === 'login') {
-                    var tk = data.token;
-                    console.log("Before Route Token = " + tk);
-                    window.location.href = 'http://localhost:8080/design?token=' + data.token; // Replace '/design' with the URL of your design page
+                    window.location.href = 'http://localhost:8080/design?token=' + data.token;
                 } else if (event.submitter.value === 'testLogin') {
                     console.log("Rout to Test Auth!");
 
@@ -87,6 +86,11 @@
             console.error('Error:', error);
             alert('An error occurred. Please try again later.');
         }
+    }
+
+    async function register() {
+        console.log("Rout to Register!");
+        window.location.href = 'http://localhost:8080/register';
     }
 </script>
 </body>

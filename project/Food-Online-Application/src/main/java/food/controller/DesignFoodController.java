@@ -2,8 +2,6 @@ package food.controller;
 
 import food.domain.Menu;
 import food.domain.Menu.Type;
-import food.domain.OrderHistory;
-import food.repository.UserRepository;
 import jakarta.servlet.http.HttpSession;
 import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
@@ -90,7 +88,6 @@ public class DesignFoodController {
         httpSession.setAttribute("checkedItems", checkedItems);
         httpSession.setAttribute("totalPrice", totalPrice);
         httpSession.setAttribute("token", token);
-
 
         log.info("Total Price: {}", totalPrice);
         log.info("Checked items: {}", checkedItems);

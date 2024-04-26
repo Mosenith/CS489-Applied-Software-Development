@@ -83,7 +83,7 @@ public class AppConfig {
                         auth -> {
                             auth
                                     .requestMatchers("/api/auth/login").permitAll()
-                                    .requestMatchers("/api/auth/test").hasRole("USER")
+                                    .requestMatchers("/api/auth/test").hasRole("ADMIN")
                                     .anyRequest().permitAll();
                         }
                 )

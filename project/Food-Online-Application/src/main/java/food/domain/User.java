@@ -2,17 +2,11 @@ package food.domain;
 
 import jakarta.persistence.*;
 import lombok.*;
-import org.springframework.security.core.GrantedAuthority;
-import org.springframework.security.core.authority.AuthorityUtils;
-import org.springframework.security.core.userdetails.UserDetails;
-
-import java.util.Collection;
 
 @Entity
 @Data
 @Table(name = "Customer")
 @AllArgsConstructor
-//@NoArgsConstructor(force = true) // (access = AccessLevel.PRIVATE, force = true)
 public class User { // implements UserDetails {
 
     private static final long serialVersionUID = 1L;

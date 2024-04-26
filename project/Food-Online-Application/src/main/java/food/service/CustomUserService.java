@@ -2,12 +2,15 @@ package food.service;
 
 import food.domain.User;
 import food.repository.UserRepository;
+import food.service.dto.UserAdapter;
+import food.service.dto.UserDto;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -19,7 +22,6 @@ public class CustomUserService implements UserDetailsService {
     public CustomUserService(UserRepository userRepository) {
         this.userRepository = userRepository;
     }
-
 
     // Method to load user by username
     @Override
@@ -35,21 +37,8 @@ public class CustomUserService implements UserDetailsService {
                 (user.getUsername(), user.getPassword(), getAuthority(user));
     }
 
-    // Method to load user by token
-//    public UserDetails loadUserByToken(String token) throws UsernameNotFoundException {
-//        User user = userRepository.findUserByToken(token);
-//
-//        if (user == null) {
-//            throw new UsernameNotFoundException("Invalid token.");
-//        }
-//
-//        System.out.println("User is valid===");
-//        return new org.springframework.security.core.userdetails.User
-//                (user.getUsername(), user.getPassword(), getAuthority(user));
-//    }
-
     private List<SimpleGrantedAuthority> getAuthority(User user) {
-        if(user.getRole().equals("admin")) {
+        if(user.getRole().equalsIgnoreCase("admin")) {
             System.out.println("Role == Admin");
             return Arrays.asList(new SimpleGrantedAuthority("ROLE_ADMIN"));
         } else {
@@ -77,29 +66,6 @@ public class CustomUserService implements UserDetailsService {
         return userRepository.findUserByToken(token);
     }
 
-//    @Override
-//    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-//        User user = userRepository.findUserByUsername(username);
-//
-//        if (user == null) {
-//            throw new UsernameNotFoundException("Invalid username or password.");
-//        }
-//
-//        System.out.println("User is valid===");
-//        return new org.springframework.security.core.userdetails.User
-//                (user.getUsername(), user.getPassword(), getAuthority(user));
-//    }
-//
-//    private List<SimpleGrantedAuthority> getAuthority(User user) {
-//        if(user.getRole().equals("admin")) {
-//            System.out.println("Role == Admin");
-//            return Arrays.asList(new SimpleGrantedAuthority("ROLE_ADMIN"));
-//        } else {
-//            System.out.println("Role == User");
-//            return Arrays.asList(new SimpleGrantedAuthority("ROLE_USER"));
-//        }
-//    }
-//
     // add some user data
     public void addUserData() {
         User user1 = new User(null, "miu1", "root1", "Chris Alven", "1000N 4th",
@@ -117,5 +83,15 @@ public class CustomUserService implements UserDetailsService {
 
     public User getUserByUsername(String username) {
         return userRepository.findUserByUsername(username);
+    }
+
+    public List<UserDto> getAllUsers() {
+        List<UserDto> userDtos = new ArrayList<>();
+
+        for(User usr : userRepository.findAll()) {
+            userDtos.add(UserAdapter.getUserDtoFromUser(usr));
+        }
+
+        return userDtos;
     }
 }

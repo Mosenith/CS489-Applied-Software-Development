@@ -33,15 +33,9 @@ public class TestAuthController {
             // Invalid token, redirect to error page or handle appropriately
             System.out.println("User is Null in TestAuth");
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Invalid token");
-//            return new ModelAndView("login"); // Specify the name of the error page
         }
 
         return ResponseEntity.ok(new AuthenticationResponse(token));
-//        // Valid token, redirect to testAuth page
-//        ModelAndView modelAndView = new ModelAndView();
-//        modelAndView.setViewName("testAuth"); // Specify the name of your testAuth page
-////        modelAndView.addObject("user", user); // You can pass user information to the view if needed
-//        return modelAndView;
     }
 
     @GetMapping("/testAuth")
