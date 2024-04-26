@@ -6,32 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d29c5f8a-e719-48ca-ac41-8423ae37e7e3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/src/main/java/food/FoodOnlineApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/Food-Online-Application/src/main/java/food/FoodOnlineApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/src/main/java/food/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/Food-Online-Application/src/main/java/food/controller/AuthController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/src/main/java/food/controller/DesignFoodController.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/Food-Online-Application/src/main/java/food/controller/DesignFoodController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/src/main/java/food/controller/FoodController.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/Food-Online-Application/src/main/java/food/controller/FoodController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/src/main/java/food/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/Food-Online-Application/src/main/java/food/controller/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/src/main/java/food/controller/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/Food-Online-Application/src/main/java/food/controller/RegisterController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/src/main/java/food/domain/Food.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/Food-Online-Application/src/main/java/food/domain/Food.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/src/main/java/food/domain/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/Food-Online-Application/src/main/java/food/domain/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/src/main/java/food/domain/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/Food-Online-Application/src/main/java/food/domain/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/src/main/java/food/domain/RegistrationForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/Food-Online-Application/src/main/java/food/domain/RegistrationForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/src/main/java/food/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/Food-Online-Application/src/main/java/food/domain/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/src/main/java/food/repository/FoodRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/Food-Online-Application/src/main/java/food/repository/FoodRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/src/main/java/food/service/FoodService.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/Food-Online-Application/src/main/java/food/service/FoodService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/project/Food-Online-Application/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/src/main/resources/templates/design.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/Food-Online-Application/src/main/resources/templates/design.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/Food-Online-Application/src/main/resources/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/src/main/resources/templates/orderForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/Food-Online-Application/src/main/resources/templates/orderForm.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/src/main/resources/templates/registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/Food-Online-Application/src/main/resources/templates/registration.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/target/classes/food/controller/DesignFoodController.class" beforeDir="false" afterPath="$PROJECT_DIR$/project/Food-Online-Application/target/classes/food/controller/DesignFoodController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/target/classes/food/controller/RegisterController.class" beforeDir="false" afterPath="$PROJECT_DIR$/project/Food-Online-Application/target/classes/food/controller/RegisterController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/target/classes/food/domain/Menu$Type.class" beforeDir="false" afterPath="$PROJECT_DIR$/project/Food-Online-Application/target/classes/food/domain/Menu$Type.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/target/classes/food/domain/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/project/Food-Online-Application/target/classes/food/domain/Menu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/target/classes/food/domain/RegistrationForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/project/Food-Online-Application/target/classes/food/domain/RegistrationForm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/target/classes/food/domain/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/project/Food-Online-Application/target/classes/food/domain/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/target/classes/templates/design.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/Food-Online-Application/target/classes/templates/design.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Food-Online-Application/target/classes/templates/registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/Food-Online-Application/target/classes/templates/registration.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,54 +51,54 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
-    "Application.FoodOnlineApplication.executor": "Run",
-    "Application.Main.executor": "Run",
-    "Application.TicketBookingSystemApplication.executor": "Run",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Docker.CS489-Project.executor": "Run",
-    "JUnit.HomeControllerTest.executor": "Run",
-    "JUnit.HomeControllerTest.testHomePage.executor": "Run",
-    "JUnit.MenuOnlineApplicationTests.executor": "Run",
-    "JavaScript Debug.login.html.executor": "Run",
-    "JavaScript Debug.registration.html.executor": "Run",
-    "Maven.Food-Online [clean].executor": "Run",
-    "Maven.Food-Online [install].executor": "Run",
-    "Maven.Food-Online [test].executor": "Run",
-    "Maven.foodonline [clean].executor": "Run",
-    "Maven.foodonline [install].executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Spring Boot.DentalSurgeriesBookingAppApplication.executor": "Run",
-    "Spring Boot.ElibraryApplication.executor": "Run",
-    "Spring Boot.FoodOnlineApplication.executor": "Run",
-    "Spring Boot.TicketBookingSystemApplication.executor": "Run",
-    "jdk.selected.JAVA_MODULE": "17",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/mosenithheang/IntelliJProjects/Applied-Software-Development/CS489-Applied-Software-Development/quiz1/screenshots",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "service.view.auto.scroll.to.source": "true",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;Application.FoodOnlineApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.TicketBookingSystemApplication.executor&quot;: &quot;Run&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Docker.CS489-Project.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.HomeControllerTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.HomeControllerTest.testHomePage.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MenuOnlineApplicationTests.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.login.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.registration.html.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Food-Online [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Food-Online [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Food-Online [test].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.foodonline [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.foodonline [install].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.DentalSurgeriesBookingAppApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ElibraryApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.FoodOnlineApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.TicketBookingSystemApplication.executor&quot;: &quot;Run&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/mosenithheang/IntelliJProjects/Applied-Software-Development/CS489-Applied-Software-Development/quiz1/screenshots&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;service.view.auto.scroll.to.source&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/quiz1/screenshots" />
@@ -253,7 +229,7 @@
       <workItem from="1713799189214" duration="4325000" />
       <workItem from="1713808852538" duration="2313000" />
       <workItem from="1713898584695" duration="33315000" />
-      <workItem from="1714057665477" duration="29972000" />
+      <workItem from="1714057665477" duration="37056000" />
     </task>
     <servers />
   </component>

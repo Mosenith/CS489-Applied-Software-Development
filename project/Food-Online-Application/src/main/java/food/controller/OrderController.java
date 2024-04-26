@@ -1,7 +1,12 @@
 package food.controller;
 
 import food.domain.Order;
+import food.domain.OrderHistory;
+import food.repository.OrderHistoryRepository;
+import food.repository.UserRepository;
+import food.service.CustomUserService;
 import food.service.OrderService;
+import jakarta.servlet.http.HttpSession;
 import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,6 +16,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.support.SessionStatus;
+
+import java.util.Arrays;
 
 @Slf4j
 @Controller
@@ -18,6 +26,12 @@ import org.springframework.web.bind.annotation.*;
 public class OrderController {
     @Autowired
     OrderService orderService;
+    @Autowired
+    OrderHistoryRepository orderHistoryRepository;;
+    @Autowired
+    CustomUserService userService;
+    @Autowired
+    HttpSession httpSession; // Inject HttpSession
 
     @GetMapping("/orders/current")
     public String orderForm(Model model) {
@@ -30,7 +44,20 @@ public class OrderController {
         if(errors.hasErrors()) {
             return "orderForm";
         }
-        log.info("Order Submitted: " + order);
+
+        // Retrieve session attributes
+        String checkedItems = (String) httpSession.getAttribute("checkedItems");
+        Double totalPrice = (Double) httpSession.getAttribute("totalPrice");
+        String token = (String) httpSession.getAttribute("token");
+
+        OrderHistory history = new OrderHistory();
+        history.setUserId(userService.getUserByToken(token).getId());
+        history.setMenuNames(Arrays.asList(checkedItems.split(",")));
+        history.setTotalPrice(totalPrice);
+        orderHistoryRepository.save(history);
+
+        log.info("Passed history: {}", history);
+        log.info("Order Submitted: {}", order);
         orderService.createOrder(order);
 
         return "redirect:/";
