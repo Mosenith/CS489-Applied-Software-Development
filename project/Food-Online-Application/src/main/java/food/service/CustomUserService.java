@@ -74,7 +74,7 @@ public class CustomUserService implements UserDetailsService {
 
         User user2 = new User(null, "miu2", "root2", "Simon Love", "1222N 3th",
                 "Iowa City", "Iowa", "52227", "999-7777");
-        user2.setRole("USER");
+        user2.setRole("ADMIN");
 
 
         userRepository.save(user1);

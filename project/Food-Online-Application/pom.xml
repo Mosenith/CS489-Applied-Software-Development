@@ -126,6 +126,13 @@
             <version>1.18.30</version>
 			<optional>true</optional>
 		</dependency>
+		<!--		Azure Deployment 		-->
+		<dependency>
+			<groupId>com.microsoft.sqlserver</groupId>
+			<artifactId>mssql-jdbc</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+
 	</dependencies>
 
 	<build>

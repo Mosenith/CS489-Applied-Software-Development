@@ -38,7 +38,7 @@ public class FoodOnlineApplication implements CommandLineRunner {
 //		menuRepo.save(sushiMenu);
 //		menuRepo.save(ramenMenu);
 //		menuRepo.save(burgerMenu);
-
+//
 //		System.out.println(pizzaMenu.toString());
 	}
 }

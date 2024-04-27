@@ -16,8 +16,14 @@ public class OrderService {
     OrderRepository orderRepo;
 
     public Order createOrder(Order order) {
-        orderRepo.save(order);
-        return order;
+        try {
+            Order savedOrder = orderRepo.save(order);
+            return savedOrder;
+        } catch (Exception e) {
+            // Handle the exception (log it, throw a custom exception, etc.)
+            e.printStackTrace();
+            return null; // Or throw a custom exception
+        }
     }
 
     public Order getOrderById(Long orderID) {

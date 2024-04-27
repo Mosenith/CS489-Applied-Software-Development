@@ -16,7 +16,7 @@ public class OrderAdapter {
         orderDto.setMenuNames(menuDto);
 
         orderDto.setTotalPrice(order.getTotalPrice());
-        orderDto.setName(orderDto.getName());
+        orderDto.setName(order.getName());
         orderDto.setStreet(order.getStreet());
         orderDto.setCity(order.getCity());
         orderDto.setState(order.getState());
