@@ -21,12 +21,14 @@ public class Order implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "order_id")
     private Long orderId;
     private Long userId;
 
     @ElementCollection
     @CollectionTable(name = "order_history_menu_names",
             joinColumns = @JoinColumn(name = "order_history_id"))
+    @Column(name = "menu_name")
     private List<String> menuNames = new ArrayList<>();
 
     private Double totalPrice;
